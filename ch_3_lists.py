@@ -46,13 +46,12 @@ for invited_guests in guests:
 print("\n dinner table won't come on time, i can invite only 2 people \n")
 print(guests)
 
-guests = ['emily', 'grandma', 'anna', 'aunt', 'niece', 'new_friend', 'tommy']
-while len(guests) != 2:
-    popped_guest = guests.pop(0)
-    final_list = guests[:]
+guests =['emily', 'grandma', 'anna', 'aunt', 'niece', 'new_friend', 'tommy']
+for popped_guest in guests:
+    # ??? it doesn't print message for tommy
+    popped_guest = guests.pop(2)
     print("sorry " + popped_guest + " I cant invite u for the dinner")
 
-print('\n final guest list is :' + str(guests) + '\n')
 # 3-8 seeing the world
 
 locations = ["norway", "denmark", "canada", "indonesia", "japan"]
